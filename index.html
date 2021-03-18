@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="cal">
+      <div class="top">
+        <span class="dots">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </span>
+
+        <label class="switch" for="checkbox">
+          <input type="checkbox" id="checkbox" />
+          <div class="slider round"></div>
+        </label>
+      </div>
+      <div id="screen" class="wrapper">
+        <span id= "process"></span>
+        <input id="result" type="text" class="output" readonly/>
+      </div>
+
+      <div class="keypad">
+        <div class="btnGroup">
+          <button id="clear" class="operator">C</button>
+          <button id="negative" class="operator">±</button>
+          <button id="remainder" class="operator">%</button>
+          <button id="divide" class="operator">÷</button>
+          <button class="digit">7</button>
+          <button class="digit">8</button>
+          <button class="digit">9</button>
+          <button id="multiply" class="operator">x</button>
+
+          <button class="digit">4</button>
+          <button class="digit">5</button>
+          <button class="digit">6</button>
+          <button id="minus" class="operator">-</button>
+
+          <button class="digit">1</button>
+          <button class="digit">2</button>
+          <button class="digit">3</button>
+          <button id="plus" class="operator">+</button>
+
+          <button id="zero" class="digit">0</button>
+          <button id="dot" class="digit">.</button>
+          <span></span>
+          <button id="equal" class="operator">=</button>
+        </div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/6.2.1/math.js"></script>
+
+  </body>
+</html>
